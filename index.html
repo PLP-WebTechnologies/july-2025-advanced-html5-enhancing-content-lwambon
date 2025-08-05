@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Content &amp; HTML5 Form</title>
+  
+</head>
+<body>
+
+  <header>
+    <h1>My Enhanced Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#gallery">Media Gallery</a></li>
+        <li><a href="#signup">Sign Up Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h2>Key Features</h2>
+      <ol>
+        <li>Organized content with lists and tables</li>
+        <li>Semantic HTML5 media embedding</li>
+        <li>Accessible, validated HTML5 form</li>
+      </ol>
+      <ul>
+        <li>Native form validation</li>
+        <li>Fieldset &amp; legend for grouping</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Team Section with Table -->
+    <section id="team">
+      <h2>Our Team</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice Johnson</td>
+            <td>Project Manager</td>
+            <td>Kenya</td>
+          </tr>
+          <tr>
+            <td>Ben Smith</td>
+            <td>Lead Developer</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Chloe Wang</td>
+            <td>UX Designer</td>
+            <td>China</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Media Gallery Section -->
+    <section id="gallery">
+      <h2>Media Gallery</h2>
+
+      <figure>
+        <img src="https://cdn.pixabay.com/photo/2022/10/20/11/26/landscape-7534634_640.jpg" alt="Scenic mountain landscape">
+        <figcaption>Mountain Landscape at Dawn</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="huntrix.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample Audio Clip</figcaption>
+      </figure>
+
+      <figure>
+        <video controls width="480">
+          <source src="https://cdn.pixabay.com/video/2024/03/31/206294_tiny.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+        <figcaption>Introduction Video</figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- Sign Up Form Section -->
+    <section id="signup">
+      <h2>Sign Up Form</h2>
+      <form action="#" method="post" novalidate>
+        
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter your first name"
+            required
+            minlength="2"
+          >
+
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter your last name"
+            required
+            minlength="2"
+          >
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+            autocomplete="email"
+          >
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+254712345678"
+            pattern="^\+?[0-9]{7,15}$"
+            required
+          >
+        </fieldset>
+
+        <!-- Account Settings -->
+        <fieldset>
+          <legend>Account Settings</legend>
+
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Choose a username"
+            required
+            minlength="4"
+            autocomplete="username"
+          >
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="At least 8 characters"
+            required
+            minlength="8"
+          >
+
+          <label for="birthdate">Date of Birth</label>
+          <input
+            type="date"
+            id="birthdate"
+            name="birthdate"
+            required
+          >
+
+          <label for="color">Favorite Color</label>
+          <input
+            type="color"
+            id="color"
+            name="color"
+            value="#0000ff"
+          >
+        </fieldset>
+
+        <!-- Preferences & Feedback -->
+        <fieldset>
+          <legend>Preferences & Feedback</legend>
+
+          <label for="newsletter">Subscribe to Newsletter?</label>
+          <select id="newsletter" name="newsletter" required>
+            <option value="">Choose one</option>
+            <option value="yes">Yes, sign me up</option>
+            <option value="no">No, thanks</option>
+          </select>
+
+          <label for="comments">Additional Comments</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Your feedback is welcome"
+          ></textarea>
+
+          <label for="joinDate">Form Generated On</label>
+          <input
+            type="text"
+            id="joinDate"
+            name="joinDate"
+            value="2025-08-05"
+            readonly
+          >
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Company. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
